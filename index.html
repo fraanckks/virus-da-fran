@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Vírus da Fran</title>
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+    }
+
+    .container {
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 180px;
+      animation: pulse 2s infinite;
+    }
+
+    p {
+      margin-top: 20px;
+      font-size: 1.1rem;
+      max-width: 400px;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.08); }
+      100% { transform: scale(1); }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Vírus da Fran!</h1>
+
+    <img src="https://cdn-icons-png.flaticon.com/512/616/616494.png" alt="Vírus fofinho">
+
+    <p>
+      Seus dados acabam de ser roubados heheh, dessa vez é brincadeira, mas cuidado no link que clica.
+    </p>
+  </div>
+</body>
+</html>
